@@ -1,0 +1,84 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.default {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+ #border {
+      display: block;
+      width: $banner-width;
+      height: $banner-height;
+      pointer-events: none;
+      outline: solid 1px #000;
+      outline-offset: -1px;
+      z-index: 999;
+  }
+
+#banner {
+	background: #bdb991;
+    overflow: hidden;
+    width: $banner-width;
+    height: $banner-height;
+    opacity: 0;
+
+    .text {
+        position: absolute;
+        top: 0;
+        left: 728px;
+        width: $banner-width;
+        height: $banner-height;
+        transform: translate3d(0, 0, 0.1px);
+        display: none;
+    }
+
+    #logo2 {
+        position: absolute;
+        bottom: 6px;
+        right: 13px;
+        width: 18px;
+    }
+
+    #img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate3d(0, 0, 0.1px);
+    }
+
+    #cta {
+        position: absolute;
+        bottom: 32px;
+        right: 13px;
+        opacity:0;
+        width: 81px;
+        height: 24px;
+        background: #e6e7e8;
+        border-radius: 5px;
+        overflow: hidden;
+
+        #cta_txt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 81px;
+            height: 24px;
+        }
+    }
+
+    #button-exit {
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+
+   
+
+
+}
