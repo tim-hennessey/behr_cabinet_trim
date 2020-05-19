@@ -21,7 +21,7 @@ body {
   }
 
 #banner {
-	background: #bdb991;
+	background: #fff;
     overflow: hidden;
     width: $banner-width;
     height: $banner-height;
@@ -33,13 +33,22 @@ body {
         left: 320px;
         width: $banner-width;
         height: $banner-height;
-        transform: translate3d(0, 0, 0.1px);
         display: none;
     }
 
-    #logo2 {
+    .textBlur {
         position: absolute;
-        bottom: 8px;
+        top: 0;
+        left: 320px;
+        width: $banner-width;
+        height: $banner-height;
+        filter: url(#blur-filter);
+        display: none;
+    }
+
+    #logo {
+        position: absolute;
+        bottom: 7px;
         right: 4px;
         width: 15px;
     }
@@ -53,21 +62,22 @@ body {
 
     #cta {
         position: absolute;
-        top: 27px;
-        left: 164px;
+        top: 29px;
+        left: 158px;
         opacity:0;
-        width: 52px;
-        height: 15px;
-        background: #e6e7e8;
-        border-radius: 3px;
+        width: 57px;
+        height: 16px;
+        background: #fbfbfb;
+        border-radius: 5px;
         overflow: hidden;
 
         #cta_txt {
             position: absolute;
             top: 0;
             left: 0;
-            width: 52px;
-            height: 15px;
+            width: 57px;
+            height: 16px;
+            transform: translate3d(0, 0, 0.1px);
         }
     }
 

@@ -21,7 +21,7 @@ body {
   }
 
 #banner {
-	background: #bdb991;
+	background: #fff;
     overflow: hidden;
     width: $banner-width;
     height: $banner-height;
@@ -33,15 +33,24 @@ body {
         left: 300px;
         width: $banner-width;
         height: $banner-height;
-        transform: translate3d(0, 0, 0.1px);
         display: none;
     }
 
-    #logo2 {
+    .textBlur {
         position: absolute;
-        bottom: 14px;
-        left: 12px;
-        width: 25px;
+        top: 0;
+        left: 300px;
+        width: $banner-width;
+        height: $banner-height;
+        filter: url(#blur-filter);
+        display: none;
+    }
+
+    #logo {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        width: 26px;
     }
 
     #img {
@@ -53,12 +62,12 @@ body {
 
     #cta {
         position: absolute;
-        top: 145px;
+        top: 146px;
         left: 12px;
         opacity:0;
-        width: 85px;
-        height: 25px;
-        background: #e6e7e8;
+        width: 84px;
+        height: 23px;
+        background: #fbfbfb;
         border-radius: 5px;
         overflow: hidden;
 
@@ -66,8 +75,9 @@ body {
             position: absolute;
             top: 0;
             left: 0;
-            width: 85px;
-            height: 25px;
+            width: 84px;
+            height: 23px;
+            transform: translate3d(0, 0, 0.1px);
         }
     }
 

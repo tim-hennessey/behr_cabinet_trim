@@ -21,7 +21,7 @@ body {
   }
 
 #banner {
-	background: #bdb991;
+	background: #fff;
     overflow: hidden;
     width: $banner-width;
     height: $banner-height;
@@ -33,16 +33,36 @@ body {
         left: 160px;
         width: $banner-width;
         height: $banner-height;
-        transform: translate3d(0, 0, 0.1px);
         display: none;
     }
 
-    #logo2 {
+    .textBlur {
         position: absolute;
-        bottom: 10px;
-        right: 10px;
+        top: 0;
+        left: 160px;
+        width: $banner-width;
+        height: $banner-height;
+        filter: url(#blur-filter);
+        display: none;
+    }
+
+    #logo {
+        position: absolute;
+        bottom: 7px;
+        right: 7px;
         width: 25px;
     }
+
+    .THD_copy_2 {
+  background-image: url("THD copy 2.png");
+  position: absolute;
+  left: 126px;
+  top: 564px;
+  width: 25px;
+  height: 30px;
+  z-index: 5;
+}
+
 
     #img {
         position: absolute;
@@ -53,12 +73,12 @@ body {
 
     #cta {
         position: absolute;
-        top: 220px;
+        top: 361px;
         left: 10px;
         opacity:0;
-        width: 85px;
+        width: 93px;
         height: 25px;
-        background: #e6e7e8;
+        background: #fbfbfb;
         border-radius: 5px;
         overflow: hidden;
 
@@ -66,8 +86,9 @@ body {
             position: absolute;
             top: 0;
             left: 0;
-            width: 85px;
+            width: 93px;
             height: 25px;
+            transform: translate3d(0, 0, 0.1px);
         }
     }
 
